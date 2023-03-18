@@ -1,0 +1,164 @@
+/*estilado proyecto final*/
+
+/*Importo las fuentes*/
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100;300;400&display=swap');
+/*----------------------*/
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /*incluir los bordes y el relleno en el alto y ancho*/
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+ /*ESTILADO NAVBAR-------------------------------------*/
+.navbar{
+        background-color: rgb(86, 86, 84);
+}
+
+.navbar-brand{
+        border-radius: 15px;
+
+}
+
+.navbar-nav .nav-item .nav-link{
+        color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+        color: #007bff;
+        transition: border-bottom 0.1s ease-in-out; /* Añade una transición suave al efecto hover */
+        border-bottom: 4px solid #007bff; /* Añade un borde inferior a la caja en el efecto hover */
+        transform: scale(1.2);
+        border-radius: 10%;
+}
+
+/*ESTILADO NAVBAR-------------------------------------*/
+
+
+body{
+        height:100%;
+        width: 100%;
+}
+
+.tituloPrincipal{
+        Color:black;
+        text-align: center;
+}
+
+.galeria{
+        width: 100%;
+}
+
+.carousel-item{
+        height: 69vh;
+}
+
+.carousel-item img{
+        height: 100%;
+        object-fit: cover; /*sé que mis img están sobredimensionadas, por ahora únicamente están puestas de ejemplo*/
+}
+
+.gifFdm{
+        object-fit: cover;
+        padding-top: 10%;
+        width: 19rem;
+        height: 32rem;
+}
+
+.textoBajoSlider{
+        padding-top: 15%;
+}
+
+
+.instagram{
+        position: absolute;
+        left: 10%;
+        right: 90%;
+        font-size: 40px;
+        color: black;
+        justify-content: space-evenly;
+}
+
+.instagram:hover{
+        color: #007bff;
+        font-size: 45px;
+}
+
+.facebook{
+        position: absolute;
+        left: 10%;
+        right: 90%;
+        top: 20%;
+        font-size: 40px;
+        color: black;
+}
+
+.facebook:hover{
+        color: #007bff;
+        font-size: 45px;
+}
+
+
+/*ESTILADO PÁGINA SOBRE NOSOTROS-------------------------------------*/
+
+.h2SobreNosotros{
+        padding-top: 3%;
+        padding-left: 3%;
+}
+
+.parrafoSobreNosotros{
+        justify-content: left;
+}
+
+.imgSobreNosotros{
+        padding-top: 10%;
+        padding-left: 30%;
+        padding-right: 30%;
+        /*object-fit: cover;*/
+}
+
+
+.parrafoFilamentos{
+        padding: 10px;
+}
+/*ESTILADO PÁGINA SOBRE NOSOTROS-------------------------------------*/
+
+
+/*ESTILADO FOOTER*/
+
+footer{
+        color: white;
+        background-color: rgb(86, 86, 84);
+}
+
+.rjotaFooter{
+        padding-bottom: 10%;
+}
+
+.botonWsp{
+        text-align: right;
+        size: 80%;
+}
+
+svg{
+        color: white;
+}
+
+svg:hover{
+        color: #007bff;
+        transition: transform 0.2s ease-out;
+        transform: scale(1.2);
+}
+
+
+/*PAGINA NOSOTROS*/
+.container__main__iconoTelefono{
+        color: black;
+}
+
+
+
+
+/*PAGINA NOSOTROS*/
