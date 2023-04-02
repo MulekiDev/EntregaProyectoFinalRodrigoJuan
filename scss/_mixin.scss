@@ -1,0 +1,12 @@
+/*@mixin flexible($directionMixin, $justify, $alineacion-texto){
+    display: flex;
+    flex-direction: $directionMixin;
+    justify-content: $justify;
+    align-items: $alineacion-texto;
+}*/
+
+@mixin  flexible($directionMixin, $justify, $alineacion){
+    flex-direction: $directionMixin;
+    justify-content: $justify;
+    align-items: $alineacion;
+}

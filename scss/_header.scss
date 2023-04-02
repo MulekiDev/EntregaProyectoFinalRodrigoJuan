@@ -1,0 +1,20 @@
+header{
+        background:$color-primario;
+        color:$color-negro;
+        .navbar{
+                background-color: $color-primario;
+                .navbar-brand{
+                        border-radius: $border-radius-logos;
+                }
+        }
+        .navbar-nav .nav-item .nav-link{
+                color: $color-blanco;
+                &:hover{
+                        color: $color-hover;
+                        transition: border-bottom 0.1s ease-in-out; /* Añade una transición suave al hover */
+                        /*border-bottom: 3px solid $color-hover; /* Añade un borde inferior a la caja en el hover; por ahora lo saque pq queda medio feo */
+                        transform: scale(1.1);
+                         border-radius:$border-radius-items ;/*10%*/
+                }
+        }
+}

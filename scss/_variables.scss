@@ -1,0 +1,74 @@
+/*VARIABLES*/
+/*Colores*/
+$color-primario:rgb(86, 86, 84);
+$color-secundario:rgb(167,232,167);
+$color-texto:#666;
+$color-blanco:white;
+$color-negro:black;
+$color-hover:#007bff;
+
+/*Bordes*/
+$border-radius-items:5px;
+$border-radius-logos:15px;
+
+/*Espaciados*/
+$espaciado-standard:10px;
+$espaciado-doble:20px;
+
+/*Márgenes*/
+$margen-top:5%;
+
+
+/*Fuentes*/
+$fuente-normal:1em;
+$fuente-chica:0.8em;
+$fuente-grande:1.4em;
+$tipografia-general:arial,verdana,sans-serif;
+$tipografia-alternativa:'Times New Roman',Times,serif;
+
+/*FlexBox y otros*/
+$contenedor-flex:flex;
+$contenedor-grid:grid;
+$justify-between:space-between;
+$justify-evenly:space-evenly;
+$justify-left:right;
+$justify-texto:center;
+
+/*Titulos*/
+$tituloIndex:sans-serif;
+
+
+/*-----------------Mapas--------------------*/
+$grosorFuente:(
+    thin:100,
+    light:300,
+    regular:400,
+    medium:500,
+    bold:700,
+    black:900,
+);
+
+$tamañoFuentes:(
+    10:10px,
+    14:14px,
+    20:20px,
+    24:24px,
+    30:30px,
+    /*Titulos*/
+    45:45px,
+    55:55px,
+    65:65px,
+);
+
+$tamañoHover:(
+    45:45px,
+    50:50px,
+    65:65px,
+);
+
+$alineacion-texto:(
+    left:left,
+    center:center,
+    right:right,
+    justify:justify,
+);

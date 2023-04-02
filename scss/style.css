@@ -44,19 +44,15 @@ header {
   background: rgb(86, 86, 84);
   color: black;
 }
-
 header .navbar {
   background-color: rgb(86, 86, 84);
 }
-
 header .navbar .navbar-brand {
   border-radius: 15px;
 }
-
 header .navbar-nav .nav-item .nav-link {
   color: white;
 }
-
 header .navbar-nav .nav-item .nav-link:hover {
   color: #007bff;
   transition: border-bottom 0.1s ease-in-out; /* Añade una transición suave al hover */
@@ -74,29 +70,24 @@ main {
   /*Fin estilado main pag Productos*/
   /*Estilado MAIN SERVICIOS*/
 }
-
 main .tituloPrincipal {
   Color: black;
   text-align: center;
   font-size: 65px;
   font-family: arial, verdana, sans-serif;
 }
-
 main .galeria {
   width: 100%;
 }
-
 main .galeria .carousel-item {
   height: 69vh;
 }
-
 main .galeria .carousel-item img {
   height: 90%;
   width: 90%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
-
 main .container {
   flex-direction: row;
   justify-content: space-between;
@@ -105,31 +96,25 @@ main .container {
   overflow: hidden;
   display: inline-block;
 }
-
 main .container .gifMainIndexImpresora {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   align-items: center;
 }
-
 main .container .textoBajoSliderIntroduccion {
   margin: 0 auto;
 }
-
 main .h2SobreNosotros {
   padding-top: 3%;
   padding-left: 3%;
 }
-
 main .container .row {
   display: flex;
 }
-
 main .container .row .parrafoSobreNosotros {
   justify-content: right;
   margin-left: 1rem;
 }
-
 main .container .row .imgSobreNosotros {
   margin-left: 20px;
   margin-top: 20px;
@@ -137,73 +122,61 @@ main .container .row .imgSobreNosotros {
   width: 260px;
   border-radius: 15px;
 }
-
 main .container .row .imgFilamentos {
   height: 200px;
   width: 300px;
 }
-
 main .container .row .imgEjemploFilamentos {
   margin-top: 5%;
   height: 300px;
   width: 300px;
 }
-
 main .container .row .imgFilamentoMulticolor {
   margin-top: 5%;
   height: 300px;
   width: 290px;
 }
-
 main .container .row .imgPetReciclado {
   margin-top: 5%;
   height: 250px;
   width: 400px;
 }
-
 main .container .row .tituloProductosFilamentos {
   font-family: arial, verdana, sans-serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 2.2rem;
 }
-
 main .container .row .parrafoFilamentos {
   padding: 10px;
 }
-
 main .container .row .parrafoFilamentos .imgFilamentoVioleta {
   height: 250px;
   width: 320px;
 }
-
 main .container .row .parrafoFilamentos .imgBotellasPET {
   height: 300px;
   width: 340px;
 }
-
 main .container .row .parrafoFilamentos .imgABS {
   height: 220px;
   width: 420px;
 }
-
 main .container .row .parrafoFilamentos .imgPETG {
   height: 320px;
   width: 280px;
 }
-
 main .imgCura {
   display: block;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 90%;
   height: 90%;
   border-radius: 5px;
 }
-
 main .imgCura2 {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -217,22 +190,18 @@ footer {
   background: rgb(86, 86, 84);
   color: white;
 }
-
 footer .container .rjotaFooter {
   padding-bottom: 10%;
   font-size: 30px;
 }
-
 footer .container svg {
   color: white;
 }
-
 footer .container svg:hover {
   color: #007bff;
   transition: transform 0.2s ease-out;
   transform: scale(1.2);
 }
-
 footer .container svg .instagram {
   position: absolute;
   left: 10%;
@@ -241,10 +210,7 @@ footer .container svg .instagram {
   color: black;
   justify-content: space-evenly;
 }
-
 footer .container svg .instagram:hover {
   color: #007bff;
   font-size: 45px;
-} 
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

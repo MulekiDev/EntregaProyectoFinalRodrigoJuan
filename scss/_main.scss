@@ -1,0 +1,133 @@
+main{
+    /*Estilado Main index*/    
+    .tituloPrincipal{
+        Color:$color-negro;
+        text-align: center;
+        font-size:map-get($tamañoFuentes ,65 );
+        font-family:$tipografia-general;
+        
+    }
+    .galeria{
+        width: 100%;
+        .carousel-item{
+            height: 69vh;
+        }
+        .carousel-item img{
+            height: 90%;
+            width: 90%;
+            object-fit: cover;
+        }
+    }
+    .container{
+        @include flexible(row,space-between,flex-end); /*Mixin*/
+        overflow: hidden;
+        display: inline-block;
+
+        .gifMainIndexImpresora{
+            object-fit: cover;
+            align-items: center;
+        }
+        .textoBajoSliderIntroduccion{
+            margin: 0 auto;
+        }      
+    }
+    /*Fin estilado main index*/
+
+    /*Estilado página Sobre Nosotros*/
+    .h2SobreNosotros{
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+    .container{
+        .row{
+            display: flex;
+            .parrafoSobreNosotros{
+                justify-content:$justify-left;
+                margin-left: 1rem;
+            }
+            .imgSobreNosotros{
+                margin-left: 20px;
+                margin-top: 20px;
+                height: 420px;
+                width: 260px;
+                border-radius: $border-radius-logos;
+            }
+        }
+    }
+    /*Fin estilado main pag Sobre Nosotros*/
+    /*Estilado main pag Productos*/
+    .container{
+        .row{
+                .imgFilamentos{
+                    height: 200px;
+                    width: 300px;
+                } 
+                .imgEjemploFilamentos{
+                    margin-top: $margen-top;
+                    height: 300px;
+                    width: 300px;
+                }
+                .imgFilamentoMulticolor{
+                    margin-top: $margen-top;
+                    height: 300px;
+                    width: 290px;
+                }
+                .imgPetReciclado{
+                    margin-top: $margen-top;
+                    height: 250px;
+                    width: 400px;
+                }  
+                .tituloProductosFilamentos{
+                    font-family:$tipografia-general;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    font-size: 2.2rem;
+                }
+                .parrafoFilamentos{
+                    padding: 10px;
+                    .imgFilamentoVioleta{
+                        height: 250px;
+                        width: 320px;
+                    }
+                    .imgBotellasPET{
+                        height: 300px;
+                        width: 340px;
+                    }
+                    .imgABS{
+                        height: 220px;
+                        width: 420px;
+                    }
+                    .imgPETG{
+                        height: 320px;
+                        width: 280px;
+                    }
+                } 
+        }
+    }
+    /*Fin estilado main pag Productos*/
+    /*Estilado MAIN SERVICIOS*/
+        .imgCura{
+            display: block;
+            object-fit: cover;
+            width: 90%;
+            height: 90%;
+            border-radius: $border-radius-items;
+        }
+        .imgCura2{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: $border-radius-items;
+        }
+
+}
+
+/*
+.container__main__iconoTelefono{
+    color: $color-negro;
+}*/
+
+
+
+
+
