@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*VARIABLES*/
 /*Colores*/
+/*rgb(86, 86, 84);*/
 /*Bordes*/
 /*Espaciados*/
 /*Márgenes*/
@@ -36,16 +37,17 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  font-family: sans-serif;
 }
 
 header {
-  background: rgb(86, 86, 84);
+  background: #2C3333;
   color: black;
 }
 header .navbar {
-  background-color: rgb(86, 86, 84);
+  background-color: #2C3333;
 }
 header .navbar .navbar-brand {
   border-radius: 15px;
@@ -54,11 +56,16 @@ header .navbar-nav .nav-item .nav-link {
   color: white;
 }
 header .navbar-nav .nav-item .nav-link:hover {
-  color: #007bff;
+  color: #12f0f8;
   transition: border-bottom 0.1s ease-in-out; /* Añade una transición suave al hover */
-  /*border-bottom: 3px solid $color-hover; /* Añade un borde inferior a la caja en el hover; por ahora lo saque pq queda medio feo */
   transform: scale(1.1);
-  border-radius: 5px; /*10%*/
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -69,6 +76,12 @@ main {
   /*Estilado main pag Productos*/
   /*Fin estilado main pag Productos*/
   /*Estilado MAIN SERVICIOS*/
+}
+main .columnaParrafosProductos {
+  background-color: skyblue;
+}
+main .columnaImgProductos {
+  background-color: red;
 }
 main .tituloPrincipal {
   Color: black;
@@ -93,10 +106,8 @@ main .container {
   justify-content: space-between;
   align-items: flex-end;
   /*Mixin*/
-  overflow: hidden;
-  display: inline-block;
 }
-main .container .gifMainIndexImpresora {
+main .container .vidBajoSlider {
   -o-object-fit: cover;
      object-fit: cover;
   align-items: center;
@@ -108,63 +119,83 @@ main .h2SobreNosotros {
   padding-top: 3%;
   padding-left: 3%;
 }
-main .container .row {
-  display: flex;
+main .container-fluid .row {
+  justify-content: space-around;
+  align-items: center; /*vertical*/
 }
-main .container .row .parrafoSobreNosotros {
+main .container-fluid .row .parrafoSobreNosotros {
   justify-content: right;
   margin-left: 1rem;
 }
-main .container .row .imgSobreNosotros {
+main .container-fluid .row .imgSobreNosotros {
+  border: 4px solid #0E8388;
+  border-radius: 18px;
+  height: 300px;
+  width: 500px;
   margin-left: 20px;
   margin-top: 20px;
-  height: 420px;
-  width: 260px;
-  border-radius: 15px;
 }
-main .container .row .imgFilamentos {
-  height: 200px;
-  width: 300px;
+main .container-fluid .parrafoVideoIndex {
+  justify-content: center;
 }
-main .container .row .imgEjemploFilamentos {
-  margin-top: 5%;
-  height: 300px;
-  width: 300px;
+main .containerCardsProductos {
+  padding-top: 10px;
+  margin-bottom: 50px;
 }
-main .container .row .imgFilamentoMulticolor {
-  margin-top: 5%;
-  height: 300px;
-  width: 290px;
+main .containerCardsProductos .cardProductos {
+  background-image: linear-gradient(#2C3333, transparent);
+  align-items: center; /*posicion de la img*/
+  height: card-img-top; /*No se si se puede hacer esto pero me funciono jeje*/
+  width: card-img-top;
+  box-shadow: 5px 5px 8px 3px black;
+  padding-top: 10px;
+  border: 4px solid #0E8388;
 }
-main .container .row .imgPetReciclado {
-  margin-top: 5%;
-  height: 250px;
-  width: 400px;
+main .containerCardsProductos .cardProductos .card-img-top {
+  border: 4px solid #0E8388;
+  justify-content: center;
+  height: 280px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover; /*Para que no se deforme*/
+  border-radius: 18px;
 }
-main .container .row .tituloProductosFilamentos {
-  font-family: arial, verdana, sans-serif;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 2.2rem;
-}
-main .container .row .parrafoFilamentos {
-  padding: 10px;
-}
-main .container .row .parrafoFilamentos .imgFilamentoVioleta {
-  height: 250px;
-  width: 320px;
-}
-main .container .row .parrafoFilamentos .imgBotellasPET {
-  height: 300px;
-  width: 340px;
-}
-main .container .row .parrafoFilamentos .imgABS {
-  height: 220px;
-  width: 420px;
-}
-main .container .row .parrafoFilamentos .imgPETG {
-  height: 320px;
+main .containerCardsProductos .cardProductos .card-img-instagram { /*Clase solo para la card de Instagram*/
+  justify-content: center;
+  height: 280px;
   width: 280px;
+  -o-object-fit: cover;
+     object-fit: cover; /*Para que no se deforme*/
+  border-radius: 18px;
+}
+main .containerCardsProductos .cardProductos .btn {
+  background-color: rgb(18, 140, 126); /*Color btn wsp*/
+}
+main .containerCardsProductos .cardProductos .btn:hover {
+  background-color: #3ab813;
+  color: black;
+  transition: 0.5s;
+}
+main .containerCardsProductos .cardProductos .btnIg {
+  background-color: #F56040;
+}
+main .containerCardsProductos .cardProductos .btnIg:hover {
+  background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
+  transition: 0.5s;
+}
+main .containerCardsProductos .card-body {
+  border-radius: 5px;
+  width: card-img-top;
+  height: 220px;
+  text-align: center;
+}
+main .containerCardsProductos .card-body .card-title {
+  font-weight: 700;
+}
+main .containerCardsProductos .card-body .card-text {
+  font-size: 14px;
+  overflow: hidden;
+  text-align: justify; /*Buscar como ajustar el texto al tamaño del container*/
 }
 main .imgCura {
   display: block;
@@ -182,35 +213,24 @@ main .imgCura2 {
   border-radius: 5px;
 }
 
-/*
-.container__main__iconoTelefono{
-    color: $color-negro;
-}*/
 footer {
-  background: rgb(86, 86, 84);
+  background: #0E8388;
   color: white;
+  justify-content: center;
+  align-items: center;
 }
-footer .container .rjotaFooter {
-  padding-bottom: 10%;
+footer .container-fluid {
+  padding-left: 5%;
+}
+footer .container-fluid .rjotaFooter {
+  padding-bottom: 10px;
   font-size: 30px;
 }
-footer .container svg {
+footer .container-fluid svg {
   color: white;
 }
-footer .container svg:hover {
-  color: #007bff;
+footer .container-fluid svg:hover {
+  color: #2C3333;
   transition: transform 0.2s ease-out;
   transform: scale(1.2);
-}
-footer .container svg .instagram {
-  position: absolute;
-  left: 10%;
-  right: 90%;
-  font-size: 40px;
-  color: black;
-  justify-content: space-evenly;
-}
-footer .container svg .instagram:hover {
-  color: #007bff;
-  font-size: 45px;
 }/*# sourceMappingURL=style.css.map */

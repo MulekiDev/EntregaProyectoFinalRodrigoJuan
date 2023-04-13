@@ -1,31 +1,24 @@
-footer{
-    background: $color-primario;
+footer{ 
+    background: $color-footer;
     color: $color-blanco;
-    .container{
+    justify-content: center;
+    align-items: center;
+    .container-fluid{
+        padding-left: 5%;
         .rjotaFooter{
-            padding-bottom: 10%;
+            padding-bottom: 10px;
             font-size: map-get($tamañoFuentes, 30);
         }   
         svg{
             color: $color-blanco;
             &:hover{
-                color:$color-hover;
+                color:$color-primario;
                 transition: transform 0.2s ease-out;
                 transform: scale(1.2);
-            }
-            .instagram{
-                position: absolute;
-                left: 10%;
-                right: 90%;
-                font-size: 40px;
-                color: $color-negro;
-                justify-content: $justify-evenly;
-                &:hover{
-                    color: $color-hover;
-                    font-size:map-get($tamañoHover,45);
-                }
+                
             }
         }
     }   
+    
 }
 

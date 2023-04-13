@@ -1,15 +1,19 @@
 /*VARIABLES*/
 /*Colores*/
-$color-primario:rgb(86, 86, 84);
-$color-secundario:rgb(167,232,167);
+$color-primario:#2C3333;/*rgb(86, 86, 84);*/
+$color-secundario:#2E4F4F;
+$color-footer:#0E8388;
 $color-texto:#666;
 $color-blanco:white;
 $color-negro:black;
-$color-hover:#007bff;
+$color-hover:#12f0f8;
+$color-hover-btn:#3ab813; 
+$color-hover-cards:rgb(68, 68, 67);
 
 /*Bordes*/
 $border-radius-items:5px;
 $border-radius-logos:15px;
+$border-radius-img:18px;
 
 /*Espaciados*/
 $espaciado-standard:10px;
