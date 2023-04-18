@@ -48,11 +48,18 @@ header {
 }
 
 header .navbar {
-  background-color: #2C3333;
+  background-color: rgba(95, 158, 160, 0.6039215686);
+}
+
+header .navbar a {
+  width: 20%;
 }
 
 header .navbar .navbar-brand {
-  border-radius: 15px;
+  box-shadow: 7px 5px 5px black;
+  border-radius: 100px;
+  width: 35%;
+  height: 35%;
 }
 
 header .navbar-nav .nav-item .nav-link {
@@ -82,23 +89,38 @@ main {
   /*Estilado MAIN SERVICIOS*/
 }
 
+main a {
+  text-decoration: none;
+}
+
+main hr {
+  border: solid 2px #0E8388;
+}
+
 main .columnaParrafosProductos {
   background-color: skyblue;
 }
 
 main .tituloPrincipal {
-  Color: black;
+  color: black;
   text-align: center;
-  font-size: 65px;
-  font-family: arial, verdana, sans-serif;
+  font-size: 45px;
+  font-family: Impact;
 }
 
-main .galeria {
-  width: 100%;
+main .h2Servicios { /*este es otro igual al tituloPrincipal pero a éste le aplico Hover*/
+  color: black;
+  text-align: center;
+  font-size: 45px;
+  font-family: Impact;
+}
+
+main .h2Servicios:hover {
+  color: rgba(7, 89, 90, 0.6039215686);
 }
 
 main .galeria .carousel-item {
-  height: 69vh;
+  height: 70vh;
 }
 
 main .galeria .carousel-item img {
@@ -106,51 +128,85 @@ main .galeria .carousel-item img {
   width: 90%;
   -o-object-fit: cover;
   object-fit: cover;
+  border-radius: 18px;
+  border: 3px solid #2C3333;
 }
 
 main .container {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  /*Mixin*/
+  /*@include flexible(row,space-between,flex-end); /*Mixin*/
 }
 
-main .container .vidBajoSlider {
-  -o-object-fit: cover;
-  object-fit: cover;
-  align-items: center;
+main .container iframe {
+  border-radius: 10px;
 }
 
 main .container .textoBajoSliderIntroduccion {
-  margin: 0 auto;
+  align-items: right;
 }
 
+@media (max-width: 700px) {
+  main .container .vidBajoSlider {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  main .container .vidBajoSlider {
+    width: 60vw;
+    height: 40vh;
+    padding-left: 10%;
+  }
+  main .container .textoBajoSliderIntroduccion {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  main .container .vidBajoSlider {
+    width: 42vh;
+    height: 44vh;
+  }
+}
+@media (min-width: 1200px) {
+  main .container .vidBajoSlider {
+    width: 100%;
+    height: 100%;
+  }
+}
 main .h2SobreNosotros {
-  padding-top: 3%;
-  padding-left: 3%;
+  padding: 5px;
 }
 
-main .container-fluid .row {
+main .h1Productos {
+  font-family: Impact;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+main .container-fluid {
+  padding: 20px;
+  padding-bottom: 4px;
+}
+
+main .container-fluid .rowNosotros {
+  overflow: hidden;
+  border: 3px solid rgba(95, 158, 160, 0.6039215686);
   justify-content: space-around;
   align-items: center; /*vertical*/
 }
 
-main .container-fluid .row .parrafoSobreNosotros {
+main .container-fluid .rowNosotros .parrafoSobreNosotros {
   justify-content: right;
   margin-left: 1rem;
 }
 
-main .container-fluid .row .imgSobreNosotros {
+main .container-fluid .rowNosotros .imgSobreNosotros {
   border: 4px solid #0E8388;
   border-radius: 18px;
   height: 300px;
   width: 500px;
   margin-left: 20px;
   margin-top: 20px;
-}
-
-main .container-fluid .parrafoVideoIndex {
-  justify-content: center;
 }
 
 main .containerCardsProductos {
@@ -168,13 +224,17 @@ main .containerCardsProductos .cardProductos {
   border: 4px solid #0E8388;
 }
 
+main .containerCardsProductos .cardProductos:hover {
+  color: rgba(7, 89, 90, 0.6039215686);
+}
+
 main .containerCardsProductos .cardProductos .card-img-top {
   border: 4px solid #0E8388;
   justify-content: center;
   height: 280px;
   width: 200px;
   -o-object-fit: cover;
-  object-fit: cover; /*Para que no se deforme*/
+  object-fit: cover;
   border-radius: 18px;
 }
 
@@ -183,18 +243,18 @@ main .containerCardsProductos .cardProductos .card-img-instagram { /*Clase solo 
   height: 280px;
   width: 280px;
   -o-object-fit: cover;
-  object-fit: cover; /*Para que no se deforme*/
+  object-fit: cover;
   border-radius: 18px;
 }
 
 main .containerCardsProductos .cardProductos .btn {
-  background-color: rgb(18, 140, 126); /*Color btn wsp*/
+  background-color: rgb(13, 110, 99); /*Color btn wsp*/
 }
 
 main .containerCardsProductos .cardProductos .btn:hover {
-  background-color: #3ab813;
+  background-color: rgba(7, 89, 90, 0.6039215686);
   color: black;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 main .containerCardsProductos .cardProductos .btnIg {
@@ -214,32 +274,144 @@ main .containerCardsProductos .card-body {
 }
 
 main .containerCardsProductos .card-body .card-title {
+  color: black;
   font-weight: 700;
 }
 
 main .containerCardsProductos .card-body .card-text {
   font-size: 14px;
   overflow: hidden;
-  text-align: justify; /*Buscar como ajustar el texto al tamaño del container*/
+  text-align: justify;
+}
+
+main .colServicios {
+  overflow: hidden;
+}
+
+main .parrafoCura {
+  padding-top: 3rem;
 }
 
 main .imgCura {
-  display: block;
   -o-object-fit: cover;
   object-fit: cover;
   width: 90%;
   height: 90%;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
-main .imgCura2 {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+main .imgCura:hover {
+  transform: scale(1.25);
+}
+
+main .formulario {
+  padding: 10px;
   border-radius: 5px;
+  border: solid 2px #0E8388;
+  text-align: center;
 }
 
+main .logoContacto {
+  width: 21rem;
+  height: 20rem;
+  padding: 50px;
+}
+
+main .colLogoContacto {
+  text-align: center;
+}
+
+main .logoWspContacto {
+  width: 5rem;
+  height: 5rem;
+}
+
+main .logoWspContacto:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+main .telContacto {
+  font-weight: 700;
+  text-align: center;
+}
+
+main .telContacto:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
 footer {
   background: #0E8388;
   color: white;
@@ -264,6 +436,11 @@ footer .container-fluid svg:hover {
   color: #2C3333;
   transition: transform 0.2s ease-out;
   transform: scale(1.2);
+}
+
+footer .container-fluid a {
+  text-decoration: none;
+  color: white;
 } 
 
 /*# sourceMappingURL=style.css.map */

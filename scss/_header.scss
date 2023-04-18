@@ -2,9 +2,15 @@ header{
         background:$color-primario;
         color:$color-negro;
         .navbar{
-                background-color: $color-primario;
+                a{
+                width: 20%;
+                }
+                background-color: $color-header;
                 .navbar-brand{
-                        border-radius: $border-radius-logos;
+                        box-shadow: 7px 5px 5px black;
+                        border-radius: 100px;
+                        width: 35%;
+                        height: 35%;
                 }
         }
         .navbar-nav .nav-item .nav-link{
@@ -13,7 +19,8 @@ header{
                         color: $color-hover;
                         transition: border-bottom 0.1s ease-in-out; /* Añade una transición suave al hover */
                         transform: scale(1.1);
-                         border-radius:$border-radius-items ;
+                        border-radius:$border-radius-items;
                 }
         }
+        
 }

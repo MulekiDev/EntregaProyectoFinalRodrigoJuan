@@ -2,6 +2,8 @@
 /*Colores*/
 $color-primario:#2C3333;/*rgb(86, 86, 84);*/
 $color-secundario:#2E4F4F;
+$color-header:#5f9ea09a;
+$color-header-darker:#07595a9a;
 $color-footer:#0E8388;
 $color-texto:#666;
 $color-blanco:white;
@@ -29,6 +31,7 @@ $fuente-chica:0.8em;
 $fuente-grande:1.4em;
 $tipografia-general:arial,verdana,sans-serif;
 $tipografia-alternativa:'Times New Roman',Times,serif;
+$tipografia-titulos:Impact;
 
 /*FlexBox y otros*/
 $contenedor-flex:flex;
@@ -59,6 +62,7 @@ $tamañoFuentes:(
     24:24px,
     30:30px,
     /*Titulos*/
+    40:40px,
     45:45px,
     55:55px,
     65:65px,
