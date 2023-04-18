@@ -114,6 +114,16 @@ main{
                 margin-left: 20px;
                 margin-top: 20px;   
             }
+            @media (max-width:1190px) {
+                .derechaSobreNosotros{
+                    padding-right: 20%;
+                    padding-left: 20%;
+                }
+                .imgSobreNosotros{
+                    height: 10rem;
+                    width: 15rem;
+                }
+            }
         }
     }
     /*Fin estilado main pag Sobre Nosotros*/

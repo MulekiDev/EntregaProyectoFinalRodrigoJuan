@@ -186,6 +186,16 @@ main .container-fluid .rowNosotros .imgSobreNosotros {
   margin-left: 20px;
   margin-top: 20px;
 }
+@media (max-width: 1190px) {
+  main .container-fluid .rowNosotros .derechaSobreNosotros {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  main .container-fluid .rowNosotros .imgSobreNosotros {
+    height: 10rem;
+    width: 15rem;
+  }
+}
 main .containerCardsProductos {
   padding-top: 10px;
   margin-bottom: 50px;
