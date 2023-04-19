@@ -141,7 +141,7 @@ main .container .textoBajoSliderIntroduccion {
 }
 @media (min-width: 390px) and (max-width: 768px) {
   main .container .vidBajoSlider {
-    width: 70vw;
+    width: 80vw;
     height: 48vh;
     padding-left: 10%;
   }
